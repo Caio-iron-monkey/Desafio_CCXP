@@ -65,6 +65,52 @@ header {
     }
     #texttimer{
         font-size: 27px;
-        margin: 10px;
+        margin: 2%;
+    }
+    video{
+        margin: 1%;
+    }
+#section2 {
+        height: 400px;
+        display: grid;
+        grid-auto-flow: column;
         
     }
+    #section2 #div_1 {
+        
+        text-align: center;
+        font-size: 20px;
+        color:rgba(243, 198, 31, 1);
+    }
+    #section2 img{
+        margin-top: 2%;
+    }
+    #section2 input{
+        width: 350px;
+        font-size:25px ;
+        font-weight: 700;
+        color: white;
+        background-color:rgba(81, 73, 136, 1) ;
+        border-radius: 20px;
+        height: 80px;
+        margin-top: 150px;
+        border: none;
+        cursor: pointer;
+        
+        
+        
+
+    }
+     #section2 input:hover{
+        transform: translateY(-7px);
+        background-color:rgb(110, 99, 184) ;
+        box-shadow:0px 10px 15px rgba(0, 0, 0, 0.514) ;
+        transition-duration: 0.5s;
+}
+    #section2 img:hover{
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+    
+    border-radius: 10px;
+    width: 250px;
+}
