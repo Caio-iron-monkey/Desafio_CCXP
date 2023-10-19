@@ -109,74 +109,76 @@ header {
         flex-direction: column;
         
     }
-    
+
+/* HEADER */
+
     header img{
         width: 120px;
-        
     }
+
+/* CONTEUDO */
+
     #section1{
         display: flex;
-        flex-direction: column;
-                
+        flex-direction: column;     
     }
-    #section1 h1{
-        font-size: 40px;
-    }
-    #contexto{
-        width: 100%;  
-    }
-    #contexto h3{
-        font-size: 20px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-    
-    #contexto p {
-        font-size: 17px;
-        margin-top: 12px;
-    }
-    #marketing{
-        width: 100%;
-
-    }
-    #timer{
-        width: 100%;
-        font-size: 33px;
+        #section1 h1{
+            font-size: 40px;
+        }
+        #contexto{
+            width: 100%;  
+        }
+        #contexto h3{
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
         
-    }
-    #texttimer{
-        font-size: 20px;
-    }
-    video{
-        width: 400px;
-    }
+        #contexto p {
+            font-size: 17px;
+            margin-top: 12px;
+        }
+        #marketing{
+            width: 100%;
+        }
+            #timer{
+                width: 100%;
+                font-size: 33px;
+                
+            }
+        #texttimer{
+            font-size: 20px;
+        }
+        video{
+            width: 400px;
+        }
+
+    /* BILHETES */
+
     #section2{
         display: flex;
         flex-direction: column;
         height: 300px;
     }
-    #section2 h3{
-        font-size: 20px;
-    }
-    #div_2{
-        display: flex;
-        align-items: center;
-    }
-    #div_2 img{
-        width: 104px;
-    }
-    #div_input{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #div_input input{
-        margin-top: 30px;
-        font-size: 20px;
-        width: 250px;
-        height: 50px;
-    }
-
-
-    
+        #section2 h3{
+            font-size: 20px;
+        }
+        #div_2{
+            display: flex;
+            align-items: center;
+        }
+        #div_2 img{
+            width: 104px;
+        }
+        #div_input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #div_input input{
+            margin-top: 30px;
+            font-size: 20px;
+            width: 250px;
+            height: 50px;
+        } 
 }
