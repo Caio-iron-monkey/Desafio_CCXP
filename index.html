@@ -42,14 +42,23 @@
         <div id="div_1">
             <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
             <div id="div_2">
-                <img src="img/quin.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
-                <img src="img/sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" alt="" id="sexta">
-                <img src="img/sab.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" alt="" id="sabado">
-                <img src="img/dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" alt="" id="domingo" class="card-ingresso">
+                <img class="card-ingresso"  src="img/quin.svg" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+
+                <img class="card-ingresso"  src="img/sex.svg" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" alt="" id="sexta">
+
+                <img class="card-ingresso" src="img/sab.svg" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" alt="" id="sabado">
+
+                <img class="card-ingresso" src="img/dom.svg" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" alt="" id="domingo" class="card-ingresso">
             </div>   
         </div>
-        <div id="div_input"><input type="button" value="GARANTA O SEU!" ></div>
+        <div id="div_input"><input type="button" value="GARANTA O SEU!" onclick="showSelectedCards()"></div>
     </section>
+    <form action="https://www.google.com">
+        <div id="formulario">
+            <input type="email" placeholder="E-mail" required />
+            <input type="submit"/>
+        </div>
+    </form>
     <script src="script.js"></script>
     <script src="main.js"></script>
 </body>

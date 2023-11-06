@@ -1,25 +1,27 @@
-// function addRedBorder(id){
+const ingressos = [];
 
-//     element = document.querySelector("#" + id);
-//     element.style.border = "5px solid red";
-// }
+function addRedBorder(id){
 
-// function highlightCard(selector){
+    element = document.querySelector(`#${id})`);
+    element.style.border = "5px solid red";
+}
 
-//     var element = document.querySelector(selector);
-//     element.classList.toggle("card-high-light")
-// }
+function highlightCard(selector){
+
+    var element = document.querySelector(selector);
+    element.classList.toggle("card-high-light")
+}
 
 // FUNCAO PARA DESCOBRIR CODIGO DE CADA TECLA DO TECLADO.
-// function checkKeyboardCode(){
+function checkKeyboardCode(){
     
-//     document.addEventListener('keydown', (event) => {
-//         var name = event.key;
-//         var code = event.code;
+    document.addEventListener('keydown', (event) => {
+        var name = event.key;
+        var code = event.code;
         
-//         alert(`Tecla Pressionada ${name} \r\n Key code: ${code}`);
-//     }, false );
-// }
+        alert(`Tecla Pressionada ${name} \r\n Key code: ${code}`);
+    }, false );
+}
 
 
 
@@ -66,4 +68,17 @@ function addKeyboardEventListeners(){
     }, false);
 }
 
-addKeyboardEventListeners();
+
+selectCard = (selector) => {
+  
+    var element = document.querySelector(selector)
+    element.classList.toggle("card-selected") ;
+    if(ingressos.includes(selector)) ingressos.pop(selector);
+    else ingressos.push(selector)
+ }
+ 
+ showSelectedCards = () => {
+    
+    if(ingressos.length > 0) alert("Iingressos Selecionados:" + ingressos);
+ }
+ addKeyboardEventListeners();
